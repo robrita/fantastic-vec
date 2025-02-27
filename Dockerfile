@@ -1,6 +1,12 @@
 # Use the official Python image from the Docker Hub
 FROM python:3.12.7-slim
 
+# Set environment variable for the port
+ENV PORT=8000
+
+# Expose the port that the application will run on
+EXPOSE 8000
+
 # Set the working directory inside the container
 WORKDIR /app
 
